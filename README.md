@@ -1,0 +1,1 @@
+# Sistema-de-Cache-de-Mem-ria-com-Tabela-Hash

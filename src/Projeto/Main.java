@@ -36,25 +36,25 @@ public class Main {
 
             switch (escolha) {
                 case 1:
-                    System.out.print("Digite a sessão: ");
+                    System.out.print("Digite o nome: ");
                     String sessaoInserir = scanner.nextLine();
                     System.out.print("Digite os dados do usuário: ");
                     String dadosInserir = scanner.nextLine();
                     cacheLRU.inserir(sessaoInserir, dadosInserir);
-                    System.out.println("Sessão e dados inseridos no cache.");
+                    System.out.println("Nomes e dados inseridos no cache.");
                     break;
                 case 2:
-                    System.out.print("Digite a sessão para buscar: ");
+                    System.out.print("Digite o nome para buscar: ");
                     String sessaoBuscar = scanner.nextLine();
                     String dados = cacheLRU.buscar(sessaoBuscar);
                     if (dados != null) {
                         System.out.println("Dados encontrados: " + dados);
                     } else {
-                        System.out.println("Sessão não encontrada no cache.");
+                        System.out.println("Nome não encontrado no cache.");
                     }
                     break;
                 case 3:
-                    System.out.print("Digite a sessão para remover: ");
+                    System.out.print("Digite o nome para remover: ");
                     String sessaoRemover = scanner.nextLine();
                     cacheLRU.remover(sessaoRemover);
                     break;

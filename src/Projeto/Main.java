@@ -22,7 +22,7 @@ public class Main {
 
         tabelaHash.remover("Ericlecio");
 
-        System.out.println("Conteúdo da Tabela Hash após remover Nielson:");
+        System.out.println("Conteúdo da Tabela Hash após remover Ericlecio:");
         tabelaHash.imprimirTabela();
         System.out.println("Ericlecio: " + tabelaHash.buscar("Ericlecio"));
 

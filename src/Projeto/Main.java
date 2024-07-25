@@ -6,25 +6,25 @@ public class Main {
     public static void main(String[] args) {
         // Testando TabelaHash
         TabelaHash<String, String> tabelaHash = new TabelaHash<>(10);
-        tabelaHash.inserir("sessao1", "dados_usuario1");
-        tabelaHash.inserir("sessao2", "dados_usuario2");
-        tabelaHash.inserir("sessao3", "dados_usuario3");
-        tabelaHash.inserir("sessao4", "dados_usuario4");
+        tabelaHash.inserir("Flavio", "dados_usuario1");
+        tabelaHash.inserir("Nielson", "dados_usuario2");
+        tabelaHash.inserir("Ericlecio", "dados_usuario3");
+        tabelaHash.inserir("Marcos", "dados_usuario4");
 
         System.out.println("Conteúdo da Tabela Hash:");
         tabelaHash.imprimirTabela();
         System.out.println("--------------------------------------------");
 
         System.out.println("Buscar Dados de Sessão:");
-        System.out.println("sessao1: " + tabelaHash.buscar("sessao1"));
-        System.out.println("sessao2: " + tabelaHash.buscar("sessao2"));
-        System.out.println("sessao3: " + tabelaHash.buscar("sessao3"));
+        System.out.println("Flavio: " + tabelaHash.buscar("Flavio"));
+        System.out.println("Nielson: " + tabelaHash.buscar("Nielson"));
+        System.out.println("Ericlecio: " + tabelaHash.buscar("Ericlecio"));
 
-        tabelaHash.remover("sessao2");
+        tabelaHash.remover("Ericlecio");
 
-        System.out.println("Conteúdo da Tabela Hash após remover sessao2:");
+        System.out.println("Conteúdo da Tabela Hash após remover Nielson:");
         tabelaHash.imprimirTabela();
-        System.out.println("sessao2: " + tabelaHash.buscar("sessao2"));
+        System.out.println("Ericlecio: " + tabelaHash.buscar("Ericlecio"));
 
         Scanner scanner = new Scanner(System.in);
         CacheLRU<String, String> cacheLRU = new CacheLRU<>(3);
